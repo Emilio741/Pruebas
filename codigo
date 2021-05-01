@@ -1,0 +1,160 @@
+Last login: Wed Apr 28 16:08:07 on ttys000
+(base) 192:~ EmilioLemus$ ls
+AndroidStudioProjects
+Applications
+Avance2_PIA_Equipo6-Corregido.ipynb
+Avance2_PIA_Equipo6.ipynb
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+Ejemplos Python.ipynb
+Library
+MEGAsync Downloads
+MacKeeper Backups
+Movies
+Music
+PIA.drp
+Pictures
+Practica 2.ipynb
+Public
+Untitled.ipynb
+Users
+_TyranoGameData
+emiliosins741@gmail.com Creative Cloud Files
+opt
+scikit_learn_data
+(base) 192:~ EmilioLemus$ cd downloads
+(base) 192:downloads EmilioLemus$ cd platzi
+(base) 192:platzi EmilioLemus$ cd 8_programa1
+-bash: cd: 8_programa1: No such file or directory
+(base) 192:platzi EmilioLemus$ ls
+Formulas_Muestreo_Estrati.py	machine learning 
+data_science
+(base) 192:platzi EmilioLemus$ cd data_science
+(base) 192:data_science EmilioLemus$ cd git_y_github
+-bash: cd: git_y_github: No such file or directory
+(base) 192:data_science EmilioLemus$ cd git_github
+-bash: cd: git_github: No such file or directory
+(base) 192:data_science EmilioLemus$ ls
+1- curso analisis de negocios 	4_Git_Github
+2- python basico
+(base) 192:data_science EmilioLemus$ cd 4_Git_Github
+(base) 192:4_Git_Github EmilioLemus$ ls
+7- consola resumen.jpeg			Screen Shot 2021-04-22 at 16.06.51.png
+8_programa1
+(base) 192:4_Git_Github EmilioLemus$ cd 8_programa1
+(base) 192:8_programa1 EmilioLemus$ $ git init
+-bash: $: command not found
+(base) 192:8_programa1 EmilioLemus$ git init
+Initialized empty Git repository in /Users/EmilioLemus/Downloads/platzi/data_science/4_Git_Github/8_programa1/.git/
+(base) 192:8_programa1 EmilioLemus$ ls -al
+total 0
+drwxr-xr-x   3 EmilioLemus  staff   96 Apr 29 10:45 .
+drwxr-xr-x   6 EmilioLemus  staff  192 Apr 28 16:13 ..
+drwxr-xr-x  10 EmilioLemus  staff  320 Apr 29 10:45 .git
+(base) 192:8_programa1 EmilioLemus$ code
+-bash: code: command not found
+(base) 192:8_programa1 EmilioLemus$ code
+-bash: code: command not found
+(base) 192:8_programa1 EmilioLemus$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	ejemplo
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) 192:8_programa1 EmilioLemus$ git add ejemplo
+(base) 192:8_programa1 EmilioLemus$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   ejemplo
+
+(base) 192:8_programa1 EmilioLemus$ 
+(base) 192:8_programa1 EmilioLemus$ git config -- global user.name"Lemus"
+error: key does not contain a section: global
+(base) 192:8_programa1 EmilioLemus$ git config --global user.name "Lemus"
+(base) 192:8_programa1 EmilioLemus$ git config --global user.emial "emiliolemus086@gmail.com"
+(base) 192:8_programa1 EmilioLemus$ git config -- list
+error: key does not contain a section: list
+(base) 192:8_programa1 EmilioLemus$ git config --list
+credential.helper=osxkeychain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=Lemus
+user.email=emiliolemus086@gmail.com
+user.emial=emiliolemus086@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+(base) 192:8_programa1 EmilioLemus$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   ejemplo
+
+(base) 192:8_programa1 EmilioLemus$ git commit -m "Este es el primer cambio de archivo pai"
+[master (root-commit) 5699034] Este es el primer cambio de archivo pai
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ejemplo
+(base) 192:8_programa1 EmilioLemus$ code
+-bash: code: command not found
+(base) 192:8_programa1 EmilioLemus$ code.historia.txt
+-bash: code.historia.txt: command not found
+(base) 192:8_programa1 EmilioLemus$ code 
+-bash: code: command not found
+(base) 192:8_programa1 EmilioLemus$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ejemplo
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) 192:8_programa1 EmilioLemus$ git add . 
+(base) 192:8_programa1 EmilioLemus$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   ejemplo
+
+(base) 192:8_programa1 EmilioLemus$ git commit -m "Este es el primer cambio de archivo pai"
+[master 8143a36] Este es el primer cambio de archivo pai
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) 192:8_programa1 EmilioLemus$ git log ejemplo.txt
+fatal: ambiguous argument 'ejemplo.txt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+(base) 192:8_programa1 EmilioLemus$ git log ejemplo
+commit 8143a36017a0e21e81d26a374d7ebb5dd8cda3c9 (HEAD -> master)
+Author: Lemus <emiliolemus086@gmail.com>
+Date:   Thu Apr 29 11:18:20 2021 -0500
+
+    Este es el primer cambio de archivo pai
+
+commit 569903484ea17995516a039f6551e278471433c4
+Author: Lemus <emiliolemus086@gmail.com>
+Date:   Thu Apr 29 11:16:00 2021 -0500
+
+    Este es el primer cambio de archivo pai
+(base) 192:8_programa1 EmilioLemus$ 
